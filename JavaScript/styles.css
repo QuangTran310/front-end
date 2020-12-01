@@ -1,0 +1,19 @@
+.logout{
+    text-align: right;
+}
+table{
+    text-align: center;
+    border: solid lightblue;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.table{
+ padding-left: 35%; 
+}
+
+.title{
+    font-size: 35px;
+}
+
+
