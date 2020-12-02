@@ -15,51 +15,60 @@
     <div class="table">
         <table>
             <tr>
-                <th class="title" colspan="2">Weather Forecast App</th>
+                <th class="title" colspan="2">Weather Forecast</th>
             </tr>
             <tr>
                 <th colspan="2">Enter your data!</th>
             </tr>
             <tr>
                 <td>Day</td>
-                <td><input></td>
+                <td><input type="number" id="day" onkeydown="return event.keyCode !== 69" onkeypress="setDayLimit()"
+                        placeholder="Enter Day"></td>
             </tr>
             <tr>
                 <td>Month</td>
-                <td><input></td>
+                <td><input type="number" id="month" onkeydown="return event.keyCode !== 69" placeholder="Enter Month">
+                </td>
             </tr>
             <tr>
                 <td>Year</td>
-                <td><input></td>
+                <td><input type="number" id="year" onkeydown="return event.keyCode !== 69" placeholder="Enter Year">
+                </td>
             </tr>
             <tr>
                 <td>Mean Temperature</td>
-                <td><input></td>
+                <td><input type="number" id="meantemp" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Mean Temperature"></td>
             </tr>
             <tr>
                 <td>Max Temperature</td>
-                <td><input></td>
+                <td><input type="number" id="maxtemp" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Max Temperature"></td>
             </tr>
             <tr>
                 <td>Min Temperature</td>
-                <td><input></td>
+                <td><input type="number" id="mintemp" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Min Temperature"></td>
             </tr>
             <tr>
                 <td>Mean Humidity</td>
-                <td><input></td>
+                <td><input type="number" id="meanhum" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Mean Humidity"></td>
             </tr>
             <tr>
                 <td>Mean Dew</td>
-                <td><input></td>
+                <td><input type="number" id="meandew" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Mean Dew"></td>
             </tr>
             <tr>
                 <td>Pressure</td>
-                <td><input></td>
+                <td><input type="number" id="pressure" onkeydown="return event.keyCode !== 69"
+                        placeholder="Enter Pressure"></td>
             </tr>
             <tr>
                 <td></td>
-                <td colspan="2"><input type='button' name='predict' value='PREDICT' onclick='predict_func()'>
-                    <input class="cancel" type='button' name='cancel' value='CANCEL' onclick='cancel_func()'></td>
+                <td colspan="2"><input type='button' name='predict' value='PREDICT' onclick=''>
+                    <input class="cancel" type='button' name='cancel' value='CANCEL' onclick="eraseInput()"></td>
             </tr>
 
         </table>
